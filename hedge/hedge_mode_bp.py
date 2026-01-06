@@ -762,11 +762,11 @@ class HedgeBot:
         if lighter_side.lower() == 'buy':
             order_type = "CLOSE"
             is_ask = False
-            price = best_ask[0] * Decimal('1.002')
+            price = best_ask[0] * Decimal('1.001')
         else:
             order_type = "OPEN"
             is_ask = True
-            price = best_bid[0] * Decimal('0.998')
+            price = best_bid[0] * Decimal('0.999')
 
 
         # Reset order state
